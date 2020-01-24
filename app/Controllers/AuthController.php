@@ -17,10 +17,6 @@ class AuthController extends Controller
     public function __construct()
     {
         $this->model = new User();
-
-        if ($_SESSION[self::SESSION_KEY]) {
-            echo $_SESSION[self::SESSION_KEY];
-        }
     }
 
     private function requestMutator(array $data)
